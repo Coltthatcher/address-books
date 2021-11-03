@@ -10,6 +10,7 @@
 * _CSS_
 * _GIT_
 * _Javascript_
+* _JQuery_
 
 
 ## Description
