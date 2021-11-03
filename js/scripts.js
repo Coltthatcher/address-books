@@ -63,6 +63,10 @@ function displayContactDetails(addressBookToDisplay) {
 function showContact(contactId) {
   const contact = addressBook.findContact(contactId);
   $("#show-contact").show();
+
+  if(contact.firstName === ""){
+    $('#first').remove();
+  }
   $(".first-name").html(contact.firstName);
   $(".last-name").html(contact.lastName);
   $(".phone-number").html(contact.phoneNumber);
